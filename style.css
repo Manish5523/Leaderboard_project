@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Julius+Sans+One&family=Mate+SC&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #4568dc 0%, #b06ab3 100%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+    filter: blur(20px);
+    transition: all 1s ease;
+}
+
+body > *{
+    user-select: none;
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+.main-container{
+    font-family: "Urbanist", sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-heading{
+    font-family: "Julius Sans One", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 5px white;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.inputdiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inputdiv > *{
+    height: 35px;
+    width: 200px;
+    border-radius: 100px;
+    padding: 0px 10px;
+    border: none;
+    gap: 20px;
+}
+
+.inputs input:focus-visible, .inputs select{
+    outline: none;
+}
+
+.align{
+    text-align: center;
+}
+
+.inputdiv input, .inputdiv select{
+    font-family: "Urbanist", sans-serif;
+}
+
+.inputs button{
+    font-family: "Urbanist", sans-serif;
+    width: 150px;
+    background: white;
+    padding: 10px;
+    border-radius: 100px;
+    color: rgb(193, 193, 193);
+    border: none;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ad5389, #3c1053);
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: inherit;
+}
+
+.inputs button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    color: white;
+    box-shadow: -50px 0px 70px #ad5389, 50px 0px 70px #3c1053;
+}
+
+.inputs button:active{
+    transform: translateY(5px);
+}
+
+hr{
+    width: 90%;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    height: 3px;
+    background: linear-gradient(to bottom right, #ad5389, #3c1053);
+}
+
+.leader-box{
+    height: calc(100% - 80px - 4px - 38px - 40px);
+    width: 100%;
+    margin: 10px auto;
+    overflow-y: scroll;
+
+}
+
+.leader-box::-webkit-scrollbar{
+    width: 5px;
+}
+.leader-box::-webkit-scrollbar-thumb{
+    background-color: #333;
+    border-radius: 20px;
+}
+
+.Leader-card{
+    width: 80%;
+    height: 100px;
+    margin: 15px auto;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    backdrop-filter: blur(10px);
+    font-weight: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
+    transition: all 0.5s ease;
+}
+
+.Leader-card img{
+    height: 20px;
+}
+
+.Leader-card h4{
+    font-weight: 300;
+}
+
+.Leader-card p{
+    font-size: 12px;
+}
+
+.Leader-card button{
+    border: none;
+    height: 30px;
+    width: 30px;
+    color: white;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.Leader-card button:active{
+    scale: 0.8;
+}
+
+.Leader-card .entry{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.control button:hover{
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.26);
+    color: white;
+}
